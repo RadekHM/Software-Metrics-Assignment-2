@@ -33,7 +33,6 @@ class Tester(unittest.TestCase):
         with open("excel.csv", "w") as csv_file:
             for key, value in total.items():
                 average = sum(value) / len(total)
-                print("Sum : " + str(average))
                 csv_file.write(f"{key}, {average}\n")
 
         with open('data.json', 'w', encoding='utf-8') as json_file:
